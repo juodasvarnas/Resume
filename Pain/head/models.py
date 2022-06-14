@@ -19,3 +19,5 @@ class Pain(models.Model):
     contacts = models.TextField(verbose_name='Мои контакты')
     #experience = models.ForeignKey('Experience', on_delete=models.PROTECT, verbose_name='Опыт работы')
 
+    def __str__(self):
+        return self.Name
