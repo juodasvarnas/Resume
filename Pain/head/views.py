@@ -7,10 +7,8 @@ from .models import Pain
 
 def index(request):
     pain = Pain.objects.all()
-    res = '<h1>На должность представляем</h1>'
-    for item in pain:
-         res+= f'<div>\n<p>{item.Name}</p>\n<p>{item.photo}</p>\n</div>\n<hr>\n'
-    return HttpResponse(res)
+    
+    return render(request, 'head/index.html',{'pain':pain, 'Name':'имя пользователя'})
 
 def test(request):
     return HttpResponse('Тестовая страница')

@@ -11,7 +11,7 @@ class Pain(models.Model):
     social_skills = models.TextField(verbose_name='Социальные навыки')
     start_work = models.DateField(auto_now=False, verbose_name='Принят на работу')
     end_work = models.DateField(auto_now=False, verbose_name='Окончание работы')
-    photo = models.ImageField(upload_to='images/%y/%m/%d/', verbose_name='Фото', blank=True)
+    photo = models.ImageField(upload_to='images/%y/%m/%d/')
     job_title = models.CharField(max_length=150, verbose_name='Должность')
     duty = models.TextField(verbose_name='Обязанности')
     Now_job = models.CharField(max_length=150, verbose_name='Желаемая должность')
