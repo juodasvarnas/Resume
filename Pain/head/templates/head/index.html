@@ -45,7 +45,7 @@
                             <div class="col-xl-3 col-lg-2">
                                 <div class="logo">
                                     <a href="index.html">
-                                        <img src="img/logo.png" alt="">
+                                        <img src="{% static 'img/logos.png' %}" alt="" width="350" height="100">
                                     </a>
                                 </div>
                             </div>
@@ -53,32 +53,23 @@
                                 <div class="main-menu  d-none d-lg-block">
                                     <nav>
                                         <ul id="navigation">
-                                            <li><a href="index.html">home</a></li>
-                                            <li><a href="Works.html">Works</a></li>
-                                            <li><a href="Services.html">Services</a></li>
-                                            <li><a href="#">pages <i class="ti-angle-down"></i></a>
+                                            <li><a href="index.html">Главная</a></li>
+                                            <li><a href="Works.html">Мои работы</a></li>
+                                            <li><a href="about.html">О себе</a></li>
+                                            <li><a href="#">Страница хобби<i class="ti-angle-down"></i></a>
                                                 <ul class="submenu">
-                                                        <li><a href="works_details.html">work details</a></li>
-                                                        <li><a href="elements.html">elements</a></li>
+                                                    <li><a href="blog.html">Основное</a></li>
+                                                    <li><a href="single-blog.html">Страница песен</a></li>
                                                 </ul>
                                             </li>
-                                            <li><a href="about.html">about</a></li>
-                                            <li><a href="#">blog <i class="ti-angle-down"></i></a>
-                                                <ul class="submenu">
-                                                    <li><a href="blog.html">blog</a></li>
-                                                    <li><a href="single-blog.html">single-blog</a></li>
-                                                </ul>
-                                            </li>
-                                            <li><a href="contact.html">Contact</a></li>
+                                            <li><a href="contact.html">Контакты</a></li>
                                         </ul>
                                     </nav>
                                 </div>
                             </div>
                             <div class="col-xl-3 col-lg-3 d-none d-lg-block">
                                 <div class="Appointment">
-                                    <div class="book_btn d-none d-lg-block">
-                                        <a href="#">Let’s Talk</a>
-                                    </div>
+                                    <img src="{% static 'img/Logo_Django.png' %}" alt="" width="80" height="80">
                                 </div>
                             </div>
                             <div class="col-12">
@@ -100,13 +91,13 @@
                 <div class="row align-items-center position-relative">
                     <div class="col-lg-9">
                         <div class="slider_text">
-                            <h3>Hi there, I am Jony <br>
-                                <span>Creative Director</span></h3>
+                            <h3>Привет,меня зовут Алексей <br>
+                                <span>Я - начинающий разработчик</span></h3>
                         <a class="boxed-btn3-line" href="#">View Works</a>
                         </div>
                     </div>
                     <div class="my_img d-none d-lg-block">
-                        <img src="img/about/my_img.png" alt="">
+                        <img src="{% static 'img/about/Me.png' %}" alt="">
                     </div>
                 </div>
             </div>
@@ -119,24 +110,23 @@
             <div class="row">
                 <div class="col-xl-10">
                     <div class="download_text">
-                        <h3>I’m a Creative director based on New York, who loves clean, simple & unique design. I also enjoy crafting </h3>
+                        <h3>Здравствуйте, я являюсь начинающий разработчиком на Python, который всю свою жизнь имеет дело с программированием </h3>
                     </div>
                 </div>
             </div>
             <div class="row">
                 <div class="col-lg-6 col-md-6">
                     <div class="download_left">
-                        <p>Proin laoreet elementum ligula, ac tincidunt lorem accumsan nec. Fusce eget urna ante. Donec massa velit, varius a accumsan ac, tempor iaculis massa. Sed placerat justo sed libero varius vulputate. Ut a mi tempus massa malesuada fermentum.
-                        </p>
-                        <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem, vitae tristique ante. Cras pretium rutrum egestas. Integer ultrices libero sed justo vehicula, eget </p>
-                        <a href="#" class="boxed-btn3-line">Download CV</a>
+                        <p>Описание достижений</p>
+                        <p>Второй абзац</p>
+                        <a href="#" class="boxed-btn3-line">Скачать Резюме</a>
                     </div>
                 </div>
                 <div class="col-lg-5 offset-lg-1 col-md-6">
                     <div class="progress_skills">
                         <div class="single_progress">
                             <div class="label d-flex justify-content-between">
-                                <span>Wireframing</span>
+                                <span>Python</span>
                                 <span>90%</span>
                             </div>
                                 <div class="progress">
@@ -145,7 +135,7 @@
                         </div>
                         <div class="single_progress">
                                 <div class="label d-flex justify-content-between">
-                                        <span>UI/UX</span>
+                                        <span>Dgango</span>
                                         <span>70%</span>
                                     </div>
                                 <div class="progress">
@@ -154,7 +144,7 @@
                         </div>
                         <div class="single_progress">
                                 <div class="label d-flex justify-content-between">
-                                        <span>Interaction design</span>
+                                        <span>English</span>
                                         <span>45%</span>
                                     </div>
                                 <div class="progress">
@@ -166,55 +156,6 @@
             </div>
         </div>
     </div>
-
-    <!-- service_area start  -->
-    <div class="service_area">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-12">
-                    <div class="section_title mb-50">
-                        <h3>My Services</h3>
-                    </div>
-                </div>
-            </div>
-            <div class="row">
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_service text-center">
-                        <div class="icon">
-                            <img src="img/svg_icon/1.svg" alt="">
-                        </div>
-                        <h3>
-                                Web & Mobile Design
-                        </h3>
-                        <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem vitae tristique ante ibero</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_service text-center">
-                        <div class="icon">
-                            <img src="img/svg_icon/2.svg" alt="">
-                        </div>
-                        <h3>
-                                Web Development
-                        </h3>
-                        <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem vitae tristique ante ibero</p>
-                    </div>
-                </div>
-                <div class="col-lg-4 col-md-6">
-                    <div class="single_service text-center">
-                        <div class="icon">
-                            <img src="img/svg_icon/3.svg" alt="">
-                        </div>
-                        <h3>
-                                E-commerce
-                        </h3>
-                        <p>Sed eleifend sed nibh nec fringilla. Donec eu cursus sem vitae tristique ante ibero</p>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-    <!-- service_area end  -->
 
     <!-- gallery_area start  -->
     <div class="gallery_area">
@@ -232,7 +173,7 @@
                         <div class="col-xl-6 col-lg-6 col-md-6">
                             <div class="single_gallery">
                                 <div class="thumb">
-                                    <img src="img/gallery/1.png" alt="">
+                                    <img src="{% static 'img/gallery/1.png' %}" alt="">
                                 </div>
                                 <div class="gallery_heading">
                                     <span>Mobile App</span>
@@ -241,7 +182,7 @@
                             </div>
                             <div class="single_gallery">
                                 <div class="thumb">
-                                    <img src="img/gallery/2.png" alt="">
+                                    <img src="{% static 'img/gallery/2.png' %}" alt="">
                                 </div>
                                 <div class="gallery_heading">
                                     <span>Mobile App</span>
@@ -252,7 +193,7 @@
                         <div class="col-xl-6 col-lg-6 col-md-6">
                             <div class="single_gallery">
                                 <div class="thumb">
-                                    <img src="img/gallery/3.png" alt="">
+                                    <img src="{% static 'img/gallery/3.png' %}" alt="">
                                 </div>
                                 <div class="gallery_heading">
                                     <span>Mobile App</span>
@@ -261,7 +202,7 @@
                             </div>
                             <div class="single_gallery">
                                 <div class="thumb">
-                                    <img src="img/gallery/4.png" alt="">
+                                    <img src="{% static 'img/gallery/4.png' %}" alt="">
                                 </div>
                                 <div class="gallery_heading">
                                     <span>Mobile App</span>
@@ -306,7 +247,7 @@
                                             </p>
                                             <div class="testmonial_author">
                                                 <div class="thumb">
-                                                    <img src="img/case/testmonial.png" alt="">
+                                                    <img src="{% static 'img/case/testmonial.png' %}" alt="">
                                                 </div>
                                                 <div class="author_name">
                                                     <h3>Kalvin Piterson</h3>
@@ -327,7 +268,7 @@
                                             </p>
                                             <div class="testmonial_author">
                                                 <div class="thumb">
-                                                    <img src="img/case/testmonial.png" alt="">
+                                                    <img src="{% static 'img/case/testmonial.png' %}" alt="">
                                                 </div>
                                                 <div class="author_name">
                                                     <h3>Kalvin Piterson</h3>
@@ -348,7 +289,7 @@
                                             </p>
                                             <div class="testmonial_author">
                                                 <div class="thumb">
-                                                    <img src="img/case/testmonial.png" alt="">
+                                                    <img src="{% static 'img/case/testmonial.png' %}" alt="">
                                                 </div>
                                                 <div class="author_name">
                                                     <h3>Kalvin Piterson</h3>
@@ -427,37 +368,37 @@ Copyright &copy;<script>document.write(new Date().getFullYear());</script> All r
     <!-- link that opens popup -->
     <script src=" https://cdnjs.cloudflare.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"> </script>
     <!-- JS here -->
-    <script src="js/vendor/modernizr-3.5.0.min.js"></script>
-    <script src="js/vendor/jquery-1.12.4.min.js"></script>
-    <script src="js/popper.min.js"></script>
-    <script src="js/bootstrap.min.js"></script>
-    <script src="js/owl.carousel.min.js"></script>
-    <script src="js/isotope.pkgd.min.js"></script>
-    <script src="js/ajax-form.js"></script>
-    <script src="js/waypoints.min.js"></script>
-    <script src="js/jquery.counterup.min.js"></script>
-    <script src="js/imagesloaded.pkgd.min.js"></script>
-    <script src="js/scrollIt.js"></script>
-    <script src="js/jquery.scrollUp.min.js"></script>
-    <script src="js/wow.min.js"></script>
-    <script src="js/nice-select.min.js"></script>
-    <script src="js/jquery.slicknav.min.js"></script>
-    <script src="js/jquery.magnific-popup.min.js"></script>
-    <script src="js/plugins.js"></script>
+    <script src="{% static 'js/vendor/modernizr-3.5.0.min.js' %}"></script>
+    <script src="{% static 'js/vendor/jquery-1.12.4.min.js' %}"></script>
+    <script src="{% static 'js/popper.min.js' %}"></script>
+    <script src="{% static 'js/bootstrap.min.js' %}"></script>
+    <script src="{% static 'js/owl.carousel.min.js' %}"></script>
+    <script src="{% static 'js/isotope.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/ajax-form.js' %}"></script>
+    <script src="{% static 'js/waypoints.min.js' %}"></script>
+    <script src="{% static 'js/jquery.counterup.min.js' %}"></script>
+    <script src="{% static 'js/imagesloaded.pkgd.min.js' %}"></script>
+    <script src="{% static 'js/scrollIt.js' %}"></script>
+    <script src="{% static 'js/jquery.scrollUp.min.js' %}"></script>
+    <script src="{% static 'js/wow.min.js' %}"></script>
+    <script src="{% static 'js/nice-select.min.js' %}"></script>
+    <script src="{% static 'js/jquery.slicknav.min.js' %}"></script>
+    <script src="{% static 'js/jquery.magnific-popup.min.js' %}"></script>
+    <script src="{% static 'js/plugins.js' %}"></script>
     <!-- <script src="js/gijgo.min.js"></script> -->
-    <script src="js/slick.min.js"></script>
+    <script src="{% static 'js/slick.min.js' %}"></script>
 
 
 
     <!--contact js-->
-    <script src="js/contact.js"></script>
-    <script src="js/jquery.ajaxchimp.min.js"></script>
-    <script src="js/jquery.form.js"></script>
-    <script src="js/jquery.validate.min.js"></script>
-    <script src="js/mail-script.js"></script>
+    <script src="{% static 'js/contact.js' %}"></script>
+    <script src="{% static 'js/jquery.ajaxchimp.min.js' %}"></script>
+    <script src="{% static 'js/jquery.form.js' %}"></script>
+    <script src="{% static 'js/jquery.validate.min.js' %}"></script>
+    <script src="{% static 'js/mail-script.js' %}"></script>
 
 
-    <script src="js/main.js"></script>
+    <script src="{% static 'js/main.js' %}"></script>
 </body>
 
 </html>
